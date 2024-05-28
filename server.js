@@ -40,7 +40,6 @@ const instance = new Razorpay({
 // routes
 app.use("/api/pizzas",require("./routes/pizzaRoute"));
 app.use("/api/users",require("./routes/userRoute"));
-app.use("/api/orders",require("./routes/orderRoute"));
 app.use("/api/payment",require("./routes/paymentroute"));
 
 app.get("/",(req, res) => {
