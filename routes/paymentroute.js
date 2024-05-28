@@ -88,7 +88,7 @@ router.get('/allorders',async (req, res)=>{
   try{
     const orders = await Payment.find({});
     res.status(200).send(orders);
-    console.log(orders);
+    
   }
   catch(error) {
     res.status(400).json({
